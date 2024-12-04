@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فكرة ديزاين</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- عنوان الموقع -->
+    <header>
+        <h1>فكرة ديزاين</h1>
+    </header>
+
+    <!-- قسم تسجيل الدخول -->
+    <section id="login">
+        <h2>تسجيل الدخول</h2>
+        <form onsubmit="validateLogin(event)">
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" required>
+            <br>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </section>
+
+    <!-- قسم الكورسات -->
+    <section id="courses" style="display: none;">
+        <h2>الكورسات المتاحة</h2>
+
+        <!-- إضافة الكورسات -->
+        <div class="course" id="ai-course">
+            <h3>الذكاء الاصطناعي</h3>
+            <input type="password" id="ai-password" placeholder="أدخل كلمة المرور">
+            <button onclick="enrollToAICourse()">سجل الآن</button>
+            <div id="ai-video" style="display: none;">
+                <ul>
+                    <li>
+                        <h3>الفيديو الأول</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/tndkAf5BVYY" 
+                                title="Section 1 || وايت بورد" 
+                                allowfullscreen></iframe>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>الفيديو الثاني</h3>
+                        <div class="video-container">
+                            <iframe src="https://geo.dailymotion.com/player.html?video=x8ifn0u" 
+                                title="Dailymotion Video Player" 
+                                allowfullscreen></iframe>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="course" id="photoshop-course">
+            <h3>الفوتوشوب</h3>
+            <input type="password" id="photoshop-password" placeholder="أدخل كلمة المرور">
+            <button onclick="openPhotoshopCourse()">سجل الآن</button>
+        </div>
+
+        <div class="course" id="canva-course">
+            <h3>كانفا</h3>
+            <input type="password" id="canva-password" placeholder="أدخل كلمة المرور">
+            <button onclick="openCanvaCourse()">سجل الآن</button>
+        </div>
+
+        <div class="course" id="editing-course">
+            <h3>المونتاج</h3>
+            <input type="password" id="editing-password" placeholder="أدخل كلمة المرور">
+            <button onclick="openEditingCourse()">سجل الآن</button>
+        </div>
+
+        <div class="course" id="whiteboard-course">
+            <h3>الوايت بورد</h3>
+            <input type="password" id="whiteboard-password" placeholder="أدخل كلمة المرور">
+            <button onclick="openWhiteboardCourse()">سجل الآن</button>
+        </div>
+
+        <div class="course" id="voiceover-course">
+            <h3>الفويس أوفر</h3>
+            <input type="password" id="voiceover-password" placeholder="أدخل كلمة المرور">
+            <button onclick="openVoiceoverCourse()">سجل الآن</button>
+        </div>
+    </section>
+
+    <!-- قائمة الكورسات المسجلة
+    <section id="enrolled-courses">
+        <<h2 >الكورسات المسجلة</h2> -->
+<!-- 
+        <ul id="enrolled-list"></ul> -->
+    </section> 
+    <!-- قسم الحقوق والتواصل -->
+    <!-- قسم الحقوق والتواصل -->
+<footer>
+    <!-- حقوق النشر -->
+    <section id="copyright">
+        <p>&copy; 2024 فكرة ديزاين. جميع الحقوق محفوظة.</p>
+    </section>
+
+    <!-- دعم فني واتصل بنا -->
+    <section id="contact">
+        <h3>دعم فني واتصل بنا</h3>
+        <p>إذا كان لديك أي استفسار أو مشكلة، لا تتردد في التواصل معنا عبر الواتساب:</p>
+        <ul>
+            <li>
+                <a href="https://wa.me/201222752276" target="_blank" class="whatsapp-contact">
+                    <i class="fab fa-whatsapp"></i> دعم فني  - 01222752276
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/2001157875635?text=" target="_blank" class="whatsapp-contact">
+                    <i class="fab fa-whatsapp"></i> دعم فني  - 01157875635
+                </a>
+            </li>
+        </ul>
+    </section>
+</footer>
+</body>
+</html>

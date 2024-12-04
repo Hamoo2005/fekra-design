@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كورس الفوتوشوب</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        .video-container { margin: 20px; }
+    </style>
+</head>
+<body>
+    <h1 style="color: aliceblue;">كورس الفوتوشوب</h1>
+    <div class="video-container">
+        <h2>الفيديو الأول</h2>
+        <button onclick="playVideo('photoshop-video1')">شغل الفيديو</button>
+        <div id="photoshop-video1" style="display:none; margin-top: 10px;">
+            <iframe src="https://www.youtube.com/embed/tndkAf5BVYY" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="video-container">
+        <h2>الفيديو الثاني</h2>
+        <button onclick="playVideo('photoshop-video2')">شغل الفيديو</button>
+        <div id="photoshop-video2" style="display:none; margin-top: 10px;">
+            <iframe src="https://geo.dailymotion.com/player.html?video=x8ifn0u" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function playVideo(videoId) {
+            document.getElementById(videoId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
